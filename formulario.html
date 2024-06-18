@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+ <meta charset="UTF-8">
+ <title>Formulario de Registro</title>
+ <link rel="stylesheet" href="styles-form.css" />
+</head>
+<body>
+ <center><h1>Formulario de Registro</h1>
+ <p>Favor de llenar los campos, todos son requeridos</p></center>
+ <form method="post" action='htpp://www.misitio.com'>
+  <fieldset>
+      <label for="Nombre">Introduce tu nombre: <input id="nombre" name="nombre" type="text" required /> </label>
+      <label for="Apellidos">Introduce tus apellidos: <input id="apellidos" name="apellidos" type="text" required /> </label>
+      <label for="email">Introduce tu Email: <input id="email" name="email" type="email" required /> </label>
+      <label for="contraseña">Escribe tu contraseña: <input id="contraseña" name="contraseña" type="password" pattern="[a-z0-5]{8,}" required /> </label>
+  </fieldset>
+  <fieldset>
+     <legend>Tipo de cuenta (requiered)</legend>
+     <label for="cuenta-personal"><input id="cuenta-personal" type="radio" name="tipo-cuenta" class="inline" checked /> Personal</label>
+     <label for="cuenta-negocio"><input id="cuenta-negocio" type="radio" name="tipo-cuenta" class="inline" /> Business</label>
+  </fieldset>
+  <fieldset>
+      <label for="foto-perfil">Sube tu foto de perfil: <input id="foto-perfil" type="file" name="file" /> </label>
+      <label for="edad">Introduce tu edad (años cumplidos): <input id="edad" type="number" name="edad" min="13" max="120" /> </label>
+      <label for="referrer">Escribe una referencia de ti:
+         <select id="referencia" name="referencia>
+           <option value="">(selecciona una opcion)</option>
+           <option value="1">Creador de contenido en TikTok</option>
+           <option value="2">Creador de contenido en YouTube</option>
+           <option value="3">Creador de contenido de PodCast</option>
+           <option value="4">Otro</option>
+         </select>
+        </label>
+          <label for="bio">Cuentanos sobre ti:
+             <textarea id="bio" name="bio" rows="3" cols"30" placeholder="Cuentanos un poco de ti para conocerte..."></textarea>
+        </label>
+       </fieldset>
+          <label for="terminos y condiciones">
+          <input class="inline" id="terminos y condiciones" type="checkbox" required name="terminos-condiciones" /> Acepto los <a href="https://misitio.com/terminos">terminos y condiciones</a>
+        </label>
+        <input type="submit" value="Enviar Datos" />
+     </form>
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
